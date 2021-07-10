@@ -1,4 +1,38 @@
-# Getting Started with Create React App
+## LET SEE OUR PROJECT FLOW HERE......................!
+
+**_Entry Point_**
+
+## Index.js
+
+Index.js is entry file, Which is going to be render on DOM in where ID is root
+
+## App.js
+
+Here we setup our Router
+---> 1) Import the Join and Chat Component.
+---> 2) Crated Route for Join And Chat Component.
+
+## Join.js
+
+Entry Point for our chat application
+---> 1) Take name & room and set the state for them  
+---> 2) button created -- Sing in --
+---> 3) Link created so if someone click the button -- Sing in -- , name and room passed as query in url
+
+## Chat.js
+
+_socket.io-client_ import here so when _message and messages state change_ than component _Re-Renderd_\
+
+Grab the _name and room_ from _url_ which send by _Join Component_ **queryString.parse(location.search)**
+
+Estiblish the connection with server with _ENDPOINT_ in **socket = io(ENDPOINT)**
+
+Sub-divided in the small components
+---> 1) InfoBar Component _shows which room join and button close to leave the room_ **_props: room_**
+---> 2) Messages Component _display all messages which come from all users and admin(server)_ **_props: room, messages( all messages from other Users, His/She own, admin )_**
+---> 3) Input Component _input box so the user can send the message which he/she write_ **_props: message, setMessage, sendMessage(function)_**
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +101,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
